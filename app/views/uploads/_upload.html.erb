@@ -1,0 +1,8 @@
+<div id="<%= dom_id upload %>">
+  <p>
+    <strong>Attachment:</strong>
+    <%= link_to upload.attachment.filename, upload.attachment if upload.attachment.attached? %>
+    <%= image_tag upload.attachment.representation(:thumbnail) if upload.attachment.attached? %>
+  </p>
+
+</div>
